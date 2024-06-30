@@ -19,7 +19,7 @@
   margin-bottom: 1rem;
 }
 
-.footer .col:first-child {
+.footer .box:first-child {
   display: flex;
   align-items: center;
   justify-content: center;
