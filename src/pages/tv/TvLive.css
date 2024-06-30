@@ -1,0 +1,19 @@
+.tvLive {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.tvLive .component {
+  position: relative;
+  width: 100%;
+  height: 450px;
+}
+
+.tvLive .quranVideoPlayer {
+  width: 100%;
+  margin-top: 2rem;
+  position: relative;
+  border: 2px solid #efef;
+  box-shadow: 0 0 0.1rem rgba(255, 255, 255, 0.5);
+}

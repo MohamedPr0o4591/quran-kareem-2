@@ -1,0 +1,64 @@
+:root {
+  --main-color: #8f4e38;
+  --secondary-color: #c06402;
+
+  --box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #efef;
+
+  font-family: "system-ui", sans-serif;
+}
+
+body {
+  direction: rtl;
+  background: rgba(17, 17, 17, 1); /* fallback for old browsers */
+  color: "#efef";
+}
+
+p {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #efef;
+}
+
+.aref-ruqaa-regular {
+  font-family: "Aref Ruqaa", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.aref-ruqaa-bold {
+  font-family: "Aref Ruqaa", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar {
+  width: 3px;
+  /* حجم شريط التمرير */
+}
+
+/* Scrollbar Thumb (الجزء القابل للسحب) */
+::-webkit-scrollbar-thumb {
+  background-color: #355a75;
+  /* لون الخلفية */
+  border-radius: 6px;
+  /* شكل الزوايا */
+}
+
+/* Scrollbar Track (الجزء الذي لا يمكن السحب) */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  /* لون المسار */
+}

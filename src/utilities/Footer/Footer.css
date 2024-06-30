@@ -1,0 +1,87 @@
+.footer {
+  position: relative;
+  background: #28282d;
+  box-shadow: 0 0 0.4rem rgba(255, 255, 255, 0.2);
+  padding: 20px 40px;
+  margin: 20px 30px;
+  border-radius: 5px;
+  color: #efef;
+  direction: ltr;
+  z-index: 1;
+}
+
+.footer h2 {
+  user-select: none;
+}
+
+.footer .col {
+  direction: rtl;
+}
+
+.footer .col:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.footer a {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: var(--main-color);
+  margin-top: 10px;
+  color: #efef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer a img {
+  border: var(--secondary-color) 3px solid;
+
+  border-radius: 50%;
+  outline: #000 6px solid;
+  outline-offset: -3px;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.footer ul a {
+  background: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  color: #efef;
+  font-size: 1.3rem;
+}
+
+.footer ul a.active {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.footer .social-icons {
+  gap: 1rem;
+}
+
+.footer .social-icons a {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: start;
+  align-items: center;
+}
+
+.footer p {
+  font-size: 20px;
+}
