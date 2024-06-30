@@ -25,11 +25,17 @@
   color: var(--main-color);
   user-select: none;
   font-size: 5rem;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 0.3rem;
 }
 
 .bgQuran p {
   color: var(--secondary-color);
   margin-top: 0.5rem;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 0.3rem;
 }
 
 .bgQuran-container .quran-container {
@@ -46,7 +52,7 @@
   padding: 20px;
 }
 
-.bgQuran-container .quran-container .container .col {
+.bgQuran-container .quran-container .container .box {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
@@ -61,6 +67,7 @@
 }
 
 .bgQuran-container .quran-container .container select {
+  max-width: 100%;
   background: #d4bba0;
   border: none;
   outline: none;
@@ -73,6 +80,7 @@
 
 .bgQuran-container .quran-container .container select option {
   background: #f6e8c9;
+  max-width: 100%;
   border: none;
   outline: none;
   font-size: 1.5rem;

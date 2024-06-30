@@ -39,7 +39,8 @@ function TvLive() {
 
             <div className="quran-container">
               <Container className="container">
-                <Stack direction={"row"} alignItems={"center"} gap={2}>
+                <p>اختر القناة</p>
+                <Stack direction={"row"} alignItems={"center"} gap={2} mt={2}>
                   {data?.length > 0 &&
                     data.map((item) => {
                       return (
@@ -69,7 +70,9 @@ function TvLive() {
       </div>
 
       <Container className="mt-5">
-        <video src="" controls className="quranVideoPlayer" />
+        {active !== "" && (
+          <video src="" controls className="quranVideoPlayer" />
+        )}
       </Container>
     </div>
   );

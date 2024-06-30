@@ -14,8 +14,9 @@
   user-select: none;
 }
 
-.footer .col {
+.footer .box {
   direction: rtl;
+  margin-bottom: 1rem;
 }
 
 .footer .col:first-child {

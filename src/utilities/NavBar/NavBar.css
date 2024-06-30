@@ -83,3 +83,37 @@ nav.navbar ul li a.active::after {
   transform: translate(0);
   border-radius: 10px;
 }
+
+nav.navbar .nav-smallScreen {
+  position: absolute;
+  top: 90px;
+  background: #28282d;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+  transition: all 0.228s ease-in-out;
+  display: none;
+}
+
+nav.navbar .menu {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 991px) {
+  nav.navbar .long-menu {
+    display: none;
+  }
+
+  nav.navbar .menu {
+    display: block;
+  }
+
+  nav.navbar .nav-smallScreen {
+    display: flex;
+  }
+}

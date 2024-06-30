@@ -68,7 +68,7 @@ function HomePage() {
             <Container className="container">
               {recitersData?.length > 0 && (
                 <Row>
-                  <Col className="col-sm-12 col-md-6 col-lg-4 col">
+                  <Col className="col-sm-12 col-md-6 col-lg-4 box">
                     <span>اسم القارئ</span>
 
                     <select
@@ -101,7 +101,7 @@ function HomePage() {
                   </Col>
 
                   {moshafReciter?.length > 0 && reciterDetails.reciterId && (
-                    <Col className="col-sm-12 col-md-6 col-lg-4 col">
+                    <Col className="col-sm-12 col-md-6 col-lg-4 box">
                       <span>نوع المصحف</span>
 
                       <select
@@ -127,7 +127,7 @@ function HomePage() {
                   )}
 
                   {surahsData?.length > 0 && reciterDetails.reciterId && (
-                    <Col className="col-sm-12 col-md-6 col-lg-4 col">
+                    <Col className="col-sm-12 col-md-6 col-lg-4 box">
                       <span>اسم السورة</span>
 
                       <select

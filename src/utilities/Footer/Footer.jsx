@@ -13,7 +13,7 @@ function Footer() {
   return (
     <div className="footer">
       <Row>
-        <Col sm={12} md={6} lg={4} className="col">
+        <Col sm={12} md={6} lg={4} className="box">
           <h2 className="aref-ruqaa-bold">القرآن الكريم</h2>
           <Box flex={1} />
           <span>
@@ -37,7 +37,7 @@ function Footer() {
           </span>
         </Col>
 
-        <Col sm={12} md={6} lg={4} className="col">
+        <Col sm={12} md={6} lg={4} className="box">
           <span className="fs-5 text-decoration-underline">الصفحات</span>
 
           <ul>
@@ -72,7 +72,7 @@ function Footer() {
           </ul>
         </Col>
 
-        <Col sm={12} md={6} lg={4} className="col">
+        <Col sm={12} md={6} lg={4} className="box">
           <span className="fs-5 text-decoration-underline">السوشيال ميديا</span>
 
           <ul className="social-icons">
