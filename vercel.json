@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/radio", "destination": "/" },
+    { "source": "/tv-live", "destination": "/" },
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
