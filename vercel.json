@@ -1,0 +1,7 @@
+{
+  "routes": [
+    { "src": "/radio", "dest": "/" },
+    { "src": "/tv-live", "dest": "/" },
+    { "src": "/.*", "dest": "/" }
+  ]
+}
