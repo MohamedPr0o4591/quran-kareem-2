@@ -27,16 +27,104 @@
   flex-direction: column;
 }
 
-.footer a {
+.footer .developer-context {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "bt-1 bt-2 bt-3"
+    "bt-4 bt-5 bt-6"
+  ;
+
+  width: 150px;
+  height: 50px;
+}
+
+.footer .hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.footer .hover:hover~a.developer-info::before {
+  content: 'Eng. Mohamed Mokhtar';
+  position: absolute;
+  transform: translateY(-40px);
+  display: block;
+  width: 230px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: -2px -2px #28282d;
+}
+
+.footer .bt-1 {
+  grid-area: bt-1;
+}
+
+.footer .bt-1:hover~a.developer-info {
+  transform: rotateX(-15deg) rotateY(-15deg) rotateZ(0deg);
+  box-shadow: -2px -2px #28282d;
+}
+
+.footer .bt-2 {
+  grid-area: bt-2;
+}
+
+.footer .bt-3 {
+  grid-area: bt-3;
+}
+
+.footer .bt-3:hover~a.developer-info {
+  transform: rotateX(-15deg) rotateY(15deg) rotateZ(0deg);
+  box-shadow: -2px -2px #28282d;
+}
+
+.footer .bt-4 {
+  grid-area: bt-4;
+}
+
+.footer .bt-4:hover~a.developer-info {
+  transform: rotateX(-15deg) rotateY(15deg) rotateZ(0deg);
+  box-shadow: -2px -2px #28282d;
+}
+
+.footer .bt-5 {
+  grid-area: bt-5;
+}
+
+.footer .bt-6 {
+  grid-area: bt-6;
+}
+
+.footer .bt-6:hover~a.developer-info {
+  transform: rotateX(-15deg) rotateY(-15deg) rotateZ(0deg);
+  box-shadow: -2px -2px #28282d;
+}
+
+.footer a.developer-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   padding: 10px 20px;
-  border-radius: 10px;
   background: var(--main-color);
-  margin-top: 10px;
   color: #efef;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
   flex-direction: column;
+  transition: all .3s ease-in-out;
+}
+
+.footer a.developer-info::before {
+  content: "Developer Info";
+  transition: all .3s ease-in-out;
 }
 
 .footer a img {

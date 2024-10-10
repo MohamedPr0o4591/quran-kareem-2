@@ -7,7 +7,6 @@ import { Link, useLocation } from "react-router-dom";
 import { Facebook, LinkedIn, Telegram, WhatsApp } from "@mui/icons-material";
 
 function Footer() {
-  const [isHovered, setIsHovered] = useState(false);
   const location = useLocation();
 
   return (
@@ -16,25 +15,22 @@ function Footer() {
         <Col sm={12} md={6} lg={4} className="box">
           <h2 className="aref-ruqaa-bold">القرآن الكريم</h2>
           <Box flex={1} />
-          <span>
+
+          <div className="developer-context">
+            {
+              Array.from({ length: 6 }, (_, index) => {
+                return (
+                  <j className={`hover bt-${index + 1}`} key={index} />
+                )
+              })
+            }
+
             <a
               href="https://www.linkedin.com/in/mohamed-mokhtar-245927277"
               target="_blank"
-              onMouseOver={() => setIsHovered(true)}
-              onMouseOut={() => setIsHovered(false)}
-            >
-              <Avatar
-                alt="Mohamed Mokhtar"
-                src={developer}
-                sx={{
-                  width: isHovered ? 100 : 0,
-                  height: isHovered ? 100 : 0,
-                  transition: "all 0.228s ease-in-out",
-                }}
-              />
-              {isHovered ? <p>محمد مختار</p> : <span>المطــور</span>}
-            </a>
-          </span>
+              className="developer-info"
+            />
+          </div>
         </Col>
 
         <Col sm={12} md={6} lg={4} className="box">
@@ -62,9 +58,8 @@ function Footer() {
             <li>
               <Link
                 to="/tv-live"
-                className={`${
-                  location.pathname === "/tv-live" ? "active" : ""
-                }`}
+                className={`${location.pathname === "/tv-live" ? "active" : ""
+                  }`}
               >
                 تليفزيون إذاعة القرآن الكريم
               </Link>
